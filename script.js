@@ -3,9 +3,7 @@ const extendHex = (shortHex) => {
 	 let hex = shortHex.replace("#", "");
   if (hex.length === 3) {
     hex = hex
-      .split("")
-      .map((char) => char + char)
-      .join("");
+    .split("").map((char) => char + char).join("");
   }
   const fullHex = "#" + hex;
   return fullHex;
